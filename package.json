@@ -13,7 +13,7 @@
     "sass": "*",
     "vue": "^3.2.47",
     "vue-router": "*",
-    "vuex": "*"
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@types/vue": "^2.0.0",

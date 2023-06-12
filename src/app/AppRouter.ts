@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeComponent from './views/HomeScreen/HomePage.vue';
+import SignInComponent from './views/SignInScreen/SignInPage.vue';
+import ErrorComponent from './views/ErrorScreen/ErrorPage.vue';
 
 const routes = [
   {
@@ -8,9 +10,19 @@ const routes = [
     component: HomeComponent
   },
   {
-    path: '/test',
-    name: 'test',
-    component: () => import('./views/TestScreen/TestPage.vue')
+    path: '/error',
+    name: 'error',
+    component: ErrorComponent
+  },
+  {
+    path: '/signIn',
+    name: 'signIn',
+    component: SignInComponent
+  },
+  {
+    path: '/signUp',
+    name: 'signUp',
+    component: () => import('./views/SignUpScreen/SignUpPage.vue')
   }
 ]
 

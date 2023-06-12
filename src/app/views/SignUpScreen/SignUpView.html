@@ -1,0 +1,13 @@
+<div style="background-color: blue; width: 330px; display: flex; 
+flex-direction: column; justify-content: center; align-items: center; padding: 10px; color: white">
+    <div>SignUn</div>
+    <div style="display: flex; flex-direction: column; width: 200px;">
+        <label>username</label>
+        <input v-model="username" />
+        <label>email</label>
+        <input v-model="email"/>
+        <label>password</label>
+        <input v-model="password"/>
+    </div>
+    <button style="margin-top: 10px;" @click="() => {singUp()}">Confirm</button>
+</div>

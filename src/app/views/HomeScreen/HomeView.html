@@ -1,6 +1,13 @@
 <div>
-    <div>Hello World</div>
+    <div>Initial Page</div>
+    <div style="display: flex;">
+        <div style="padding: 5px; background-color: black; color: white; width: 200px;">result: {{myresult}}</div>
+        <button style="background-color: gray; border-radius: 0%;" @click="() => { show() }">OK</button>
+    </div>
     <button>
-        <router-link to="/test">Translate</router-link>
+        <router-link to="/signIn">SignIn</router-link>
+    </button>
+    <button>
+        <router-link to="/signUp">SignUp</router-link>
     </button>
 </div>
